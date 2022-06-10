@@ -40,7 +40,7 @@ export const getArtists = async (req, res) => {
                 const randomNum = Math.floor(Math.random() * (data.length + 1)); 
     
                 
-                const dataResult = [data[randomNum], {}]
+                const dataResult = [data[randomNum]]
     
                 
                 
@@ -55,7 +55,7 @@ export const getArtists = async (req, res) => {
             
             } else {
                  //Checking if Artist returned is one and returning it
-                const dataResult = [data[0], {}]
+                const dataResult = [data[0]]
     
                 // Writing csv file using Object-to-csv module
                 const csv = new ObjectsToCsv(dataResult)
@@ -70,7 +70,7 @@ export const getArtists = async (req, res) => {
             const randomNum = Math.floor(Math.random() * (dataObj.length + 1));
 
             
-            const dataResult = [dataObj[randomNum], {}]
+            const dataResult = [dataObj[randomNum]]
 
             const csv = new ObjectsToCsv(dataResult)
     
