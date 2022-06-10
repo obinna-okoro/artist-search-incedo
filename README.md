@@ -13,7 +13,7 @@
 **param2** = names the csv file to create on the localdisk
 
 
-## How to install and run run  
+## How to install and run 
 - [x] Fork this repository
 - [x] Open in code editor
 - [x] run `npm install` to install dependencies 
